@@ -5,7 +5,7 @@ const Page = () => {
     return (
         <PageLayout>
 			<Container>
-				<p>Hello there, this is page layout (from index.js)</p>
+				<p></p>
 			</Container>
 		</PageLayout>
     )

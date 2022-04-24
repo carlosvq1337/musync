@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { Box } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
+import Navbar from './navbar'
 
 const MainLayout = ({ children, router }) => {
     return (
@@ -11,8 +12,10 @@ const MainLayout = ({ children, router }) => {
                 />
                 <title>MuSync - Manage your music</title>
             </Head>
-        <Box>This is main layout</Box>
-        {children}
+
+            <Navbar path={router.asPath} />
+
+            <Container>{children}</Container>
         </Box>
     )
 }
